@@ -16,7 +16,7 @@ Das Problem welches sich hierbei jedoch ergibt, ist dass es bei n Elementen auch
 Bei unserer Recherche zu diesem Thema haben wir herausgefunden, dass es zur Lösung dieses Problems verschiedenste Möglichkeiten und Ansätze gibt.
 Zunächst einmal gibt es die Möglichkeit ein solches Programm „online“ oder auch „offline“ zu gestalten. 
 Der einzige Unterschied hier ist, dass bei der online Variante die Elemente einzeln geliefert werden und direkt in die Behälter verteilt werden. 
-Bei der offline Variante hingegen, sind die Anzahl und die Größe der Elemente bereit bekannt und werden ebenfalls Best möglichst in die Behälter verteilt.
+Bei der offline Variante hingegen, sind die Anzahl und die Größe der Elemente bereits bekannt und werden ebenfalls bestmöglicht in die Behälter verteilt.
 Es gibt drei Möglichkeiten die Elemente in die Behälter zu verteilen:
 - Next-Fit
     - Hier wird jedes Element in denselben Behälter gepackt wie sein Vorgänger 
