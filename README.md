@@ -137,7 +137,7 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 ## Fazit
 Funktionale Programmierung kann viele Vorteile haben - vor allem im Bereich des Multithreading.
 Bei der funktionalen Programmierung kann durch weniger bzw. prägnantere Codezeilen häufiger mehr erreicht werden.
-Durch die Punktnotation kurze Codezeilen kann es auch bis zu einem bestimmten Punkt zur besseren Lesbarkeit beitragen.
+Durch die Punktnotation und kurze Codezeilen kann es auch bis zu einem bestimmten Punkt zur besseren Lesbarkeit beitragen.
 Jedoch wird es bei höherer Komplexität immer schwieriger zu verstehen und zu vermitteln.
     
 
