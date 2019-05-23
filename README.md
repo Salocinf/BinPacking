@@ -118,4 +118,10 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
     - es wird ein StringJoiner erstellt, der die Elemente als String mit einem Komma getrennt nacheinander darstellt
     - im Folgenden wird mit einer forEach-Schleife jedes Element eines Behälters durchgegangen und dem StringJoiner übergeben
     
+## Fazit
+Funktionale Programmierung kann viele Vorteile haben - vor allem im Bereich des Multithreading.
+Bei der funktionalen Programmierung kann durch weniger bzw. prägnantere Codezeilen häufiger mehr erreicht werden.
+Durch die Punktnotation kurze Codezeilen kann es auch bis zu einem bestimmten Punkt zur besseren Lesbarkeit beitragen.
+Jedoch wird es bei höherer Komplexität immer schwieriger zu verstehen und zu vermitteln.
+    
 
