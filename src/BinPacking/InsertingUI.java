@@ -28,7 +28,7 @@ public class InsertingUI extends JFrame {
     public InsertingUI(Worker worker, int maxSize) {
         super("Bin Sorting");
 
-        //Initialize the eorker
+        //Initialize the worker
         this.worker = worker;
 
         //Initialize the maximum size of out bins
@@ -49,7 +49,7 @@ public class InsertingUI extends JFrame {
         //ActionListener to add the element into the Bins
         ActionListener btnListener = b -> {
             try {
-                //validates the enput and hands it over to the worker
+                //validates the input and hands it over to the worker
                 worker.insertElement(validateUserInput(tfInput));
 
                 //empties the textfield
@@ -125,6 +125,8 @@ public class InsertingUI extends JFrame {
         this.add(inputPanel, BorderLayout.NORTH);
         this.add(messagePanel, BorderLayout.CENTER);
         this.add(outputPanel, BorderLayout.SOUTH);
+
+        this.displayErrorMessage("Please insert your first element into the textfield above and press enter. (For example: 3)");
 
         this.pack();
         this.setVisible(true);
