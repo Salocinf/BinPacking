@@ -9,10 +9,10 @@
  - Tobias Essigke
  
 ## Problemstellung
-Bei dem Bin Packing-Problem handelt es sich um ein Problem, welches sich überwiegend in der Transport und Logistik Branche wieder findet. 
+Bei dem Bin Packing-Problem handelt es sich um ein Problem, welches sich überwiegend in der Transport und Logistik Branche wiederfindet.
 Es geht bei diesem Problem grundsätzlich darum, Elemente verschiedener Größen möglichst sinnvoll in Behälter zu verpacken. 
 Ziel hierbei ist es, möglichst wenig Behälter zu benutzen, sowie die benutzten Behälter möglichst effizient zu bepacken. 
-Das Problem welches sich hierbei jedoch ergibt, ist dass es bei n Elementen auch n Möglichkeiten gibt, dies zu verpacken. 
+Das Problem welches sich hierbei jedoch ergibt, ist, dass es bei n Elementen auch n Möglichkeiten gibt, diese zu verpacken. 
 Bei unserer Recherche zu diesem Thema haben wir herausgefunden, dass es zur Lösung dieses Problems verschiedenste Möglichkeiten und Ansätze gibt.
 Zunächst einmal gibt es die Möglichkeit ein solches Programm „online“ oder auch „offline“ zu gestalten. 
 Der einzige Unterschied hier ist, dass bei der online Variante die Elemente einzeln geliefert werden und direkt in die Behälter verteilt werden. 
@@ -53,7 +53,7 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
     
 ### Action.java
 - Hier wird ein Enum zur späteren Verwendung im Code erstellt
-- Es wird dafür verwendet im UI entweder die Ausführung mit dem "herkömmlichen" oder funktionalen Code durchzuführen
+- Es wird dafür verwendet, im UI entweder die Ausführung mit dem "herkömmlichen" oder funktionalen Code durchzuführen
 
 ### Bin.java
 - Hier wird das Verhalten und die Eigenschaften des Behälters (Bin) beschrieben und festgelegt
