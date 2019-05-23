@@ -43,7 +43,7 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 ### Bin Sorting
 - Lässt den Benutzer mit Eingabe von Zahlen und dem Drücken des "Insert element"-Buttons oder dem Drücken der Enter-Taste Elemente einfügen
 - Nun gibt die Ausgabe an
-    - wie viele Elemente bereits eingefügt wurden
+    - wie viele Elemente insgesamt bereits eingefügt wurden
     - welche Behälter aufgemacht wurden
     - wie viele Elemente sich in den Behältern befinden
     - welche Elemente sich in den Behältern befinden
@@ -88,6 +88,10 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
     - wenn es keine Behälter gibt, in die das Element passt, wird ein neuer Behälter erstellt
     - zum Schluss wird das Element dem ersten Behälter, in den das Element hineinpasst, oder dem neuen Behälter hinzugefügt
     
+- getNumberOfElements()
+    - es werden die Behälter gesreamt und die Anzahl der Elemente in den Behältern zu Integern übertragen und zusammengezählt
+    - dies wird dann wiederum als String zurückgegeben
+    
 - getDisplayData()
     - die Behälter werden in einem Stream weitergegeben
     - mit einer forEach-Schleife werden die Behälter durchgegangen und für das UI in einem zweidimensionalen Array zur Darstellung aufbereitet
@@ -97,6 +101,11 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 - getElements()
     - es wird ein StringJoiner erstellt, der die Elemente als String mit einem Komma getrennt nacheinander darstellt
     - dies wird dadurch erreicht, dass alle Elemente des Behälters in einem Stream weitergegeben werden und mit einre forEach-Schleife darüber iteriert wird
+    
+- getBinIndexOfFullBins()
+    - die Behälter werden gestreamt
+    - der Stream wird nach den Behältern gefiltert, die keinen Platz mehr haben
+    - die Indizes dieser Behälter werden dann einer ArrayList übergeben
     
 ### WorkerNormal.java
 - Definiert den Worker bzw. den BinPacking-Algorithmus in der "herkömmlichen" Variante
@@ -109,6 +118,9 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
         - falls es erfolgreich ist, wird die Schleife abgebrochen
     - wenn es keinen Erfolg beim Hinzufügen gab, wird ein neuer Behälter erstellt und das Element hinzugefügt
     
+- getNumberOfElements()
+    - geht mit einer forEach-Schleife durch die Behälter durch und zählt die Anzahl der Elemente insgesamt hoch
+    
 - getDisplayData()
     - mit einer for-Schleife werden die Behälter durchgegangen und für das UI in einem zweidimensionalen Array zur Darstellung aufbereitet
     - die erste Dimension des Arrays enthält die Nummer des Behälter
@@ -117,6 +129,10 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 - getElements()
     - es wird ein StringJoiner erstellt, der die Elemente als String mit einem Komma getrennt nacheinander darstellt
     - im Folgenden wird mit einer forEach-Schleife jedes Element eines Behälters durchgegangen und dem StringJoiner übergeben
+    
+- getBinIndexOfFullBins()
+    - geht mit einer forEach-Schleife durch die Behälter durch
+    - speichert den Index der Behälter, die keinen Platz mehr haben in einer ArrayList und gibt diese zurück
     
 ## Fazit
 Funktionale Programmierung kann viele Vorteile haben - vor allem im Bereich des Multithreading.

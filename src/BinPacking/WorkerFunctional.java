@@ -32,7 +32,7 @@ public class WorkerFunctional implements Worker {
 
     public String getNumberOfElements(){
         int  quantity;
-        //Sums all sizes of all ArrayLists of all bins
+        //Counts all elements in every ArrayList of all bins
         quantity = bins.stream()
                 .mapToInt(b -> b.getElements().size())
                 .sum();
@@ -73,12 +73,10 @@ public class WorkerFunctional implements Worker {
 
         //Stream through all bins
         bins.stream()
-                //Filters for every bin that has no Space left
+                //Filters every bin that has no space left
                 .filter(b -> b.calculateFreeSpace() == 0)
                 //Add the index of those bins to the ArrayList
-                .forEach(b -> {
-                    binIndexOfFullBins.add(bins.indexOf(b));
-                });
+                .forEach(b -> binIndexOfFullBins.add(bins.indexOf(b)));
 
         return binIndexOfFullBins;
     }

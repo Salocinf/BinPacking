@@ -84,7 +84,7 @@ public class WorkerNormal implements Worker {
 
         //Iterates over all Bins
         for (Bin bin: bins) {
-            //Tests if the free Space is zero
+            //Tests if the free space is zero
             if (bin.calculateFreeSpace() == 0) {
                 //if so: add the index of this bin to the ArrayList
                 binIndexOfFullBins.add(bins.indexOf(bin));
