@@ -64,7 +64,7 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 ### InsertingUI.java
 - Hier wird das User-Interface erstellt, in dem der Nutzer die Elemente dem Behälter hinzufügen kann
 - Da wir die online-Variante gewählt haben, können immer weiter Elemente den Behältern hinzugefügt werden
-- Die erstellen Behäter werden mit ihren enthaltenen Elementen gespeichert und angezeigt
+- Die erstellten Behälter werden mit ihren enthaltenen Elementen gespeichert und angezeigt
 
 ### Main.java
 - Erstellt das StartingUI als Einstieg in das Programm
@@ -96,7 +96,8 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
     - die Behälter werden in einem Stream weitergegeben
     - mit einer forEach-Schleife werden die Behälter durchgegangen und für das UI in einem zweidimensionalen Array zur Darstellung aufbereitet
     - die erste Dimension des Arrays enthält die Nummer des Behälter
-    - die zweite Dimension des Arrays entählt die eingefügten Elemente
+    - die zweite Dimension des Arrays enthält die Anzahl der Elemente im Behälter
+    - die dritte Dimension des Arrays entählt die eingefügten Elemente
     
 - getElements()
     - es wird ein StringJoiner erstellt, der die Elemente als String mit einem Komma getrennt nacheinander darstellt
@@ -124,7 +125,8 @@ Unsere Entscheidung ist auf die First-Fit-Variante gefallen.
 - getDisplayData()
     - mit einer for-Schleife werden die Behälter durchgegangen und für das UI in einem zweidimensionalen Array zur Darstellung aufbereitet
     - die erste Dimension des Arrays enthält die Nummer des Behälter
-    - die zweite Dimension des Arrays entählt die eingefügten Elemente
+    - die zweite Dimension des Arrays enthält die Anzahl der Elemente im Behälter
+    - die dritte Dimension des Arrays entählt die eingefügten Elemente
     
 - getElements()
     - es wird ein StringJoiner erstellt, der die Elemente als String mit einem Komma getrennt nacheinander darstellt
